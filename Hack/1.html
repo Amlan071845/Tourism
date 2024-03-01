@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="1.css" />
+    <title>NAAT TOURISM</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__logo">NAAT TOURISM</div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            
+
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header class="section_container header_container">
+        <div class="header_image_container">
+            <div class="header__content">
+                <h1>Enjoy Your Dream Vacation</h1>
+                <p>Book Hotels, Flights and stay packages at lowest price.</p>
+            </div>
+
+
+
+        </div>
+        </div>
+    </header>
+
+    <section class="section_container popular_container">
+        <h2 class="section__header">packages</h2>
+        <div class="popular__grid">
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 1</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 2</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 3</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 4</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 5</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popular__card">
+                
+                <div class="popular__content">
+                    <div class="popular_card_header">
+                        <h4>package 6</h4>
+                        <h4>$$$</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="calculateCost()">Calculate Cost</button>
+        <p id="result"></p>
+
+        <button id="payNowButton" onclick="redirectToPaymentPage()" disabled>Pay Now</button>
+    </div>
+
+    <script>
+        function redirectToPaymentPage() {
+            // Disable the button to prevent multiple clicks
+            document.getElementById("payNowButton").disabled = true;
+
+            // Redirect to the specified website after clicking "Pay Now"
+            window.location.href = "https://dashboard-staging.payu.in/pay/3F318C3CD06ED6E7BAD1B0016E2B637C";
+
+            // Set a timer to redirect after 3 seconds (3000 milliseconds) on the new website
+            setTimeout(function() {
+                // Redirect to acc2.html
+                window.location.href = "login.html";
+            }, 3000);
+        }
+    </script>
+
+    <script src="myscript.js"></script>
+
+
+
+
+
+    <!--Fotter-->
+    <section class="fotter">
+        <h4>About Us</h4>
+        <p>This website is just for educaational information and made by the student of Lovely Pofessional
+            University
+            <br>Thank You <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+        </p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+        <p></p>
+    </section>
+</body>
+
+</html>
